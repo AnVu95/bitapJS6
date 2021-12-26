@@ -1,6 +1,6 @@
 var numArray = [];
 function nhapNum() {
-    var num = document.getElementById("inpNumb").value;
+    var num = Number(document.getElementById("inpNumb").value);
     numArray.push(num);
     document.getElementById("txtMang").innerHTML = numArray;
 }
