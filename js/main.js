@@ -2,7 +2,7 @@ var numArray = [];
 function nhapNum() {
     var num = document.getElementById("inpNumb").value;
     numArray.push(num);
-    document.getElementById("txtMang").innerHTML = " " + numArray;
+    document.getElementById("txtMang").innerHTML = numArray;
 }
 document.getElementById("btn-num").onclick = nhapNum;
 
@@ -148,9 +148,9 @@ document.getElementById("btn-SNT").onclick = timSNTDauTien;
 /* Bài 9 */
 var numArray2 = [];
 function nhapNum2() {
-    var num2 = document.getElementById("inpNumber").value;
+    var num2 = Number(document.getElementById("inpNumber").value);
     numArray2.push(num2);
-    document.getElementById("txtSN").innerHTML = " " + numArray2;
+    document.getElementById("txtSN").innerHTML = numArray2;
 }
 document.getElementById("btn-num2").onclick = nhapNum2;
 
